@@ -20,9 +20,7 @@ install  pyAvrophonitic :
  pip install setuptools
  pip install wheel
  pip install pyAvroPhonetic
- 
- 
- 
+` ``
  
  
 2nd Way:Using Pip in a Virtualenv (needs virtualenv):
