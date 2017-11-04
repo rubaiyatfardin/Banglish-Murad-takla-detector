@@ -17,7 +17,7 @@ if len(check)==4:
     s3=avro.parse(check[2])
     s4=avro.parse(check[3])
     p=codecs.open('translate.txt','r+','utf-8')
-    p.write("%s.Translation : %s %s %s %s" %(s1,s2,s3,s4))
+    p.write("Translation : %s %s %s %s" %(s1,s2,s3,s4))
     p.close()
     print("Translation Completed.Saved to translate.txt")
     
