@@ -10,10 +10,10 @@ You  neeed These Modules in order to run this:
 
  
 Install  wget:
-: :
- 
+```
 pip  install wget
- 
+
+ ```
 install  pyAvrophonitic :
 
 
