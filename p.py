@@ -1,8 +1,6 @@
 import wget
 wget.download('http://0xhosts.com/words.txt')
 wget.download('http://0xhosts.com/translate.txt')
-import re
-g = re.compile(r'\blocal\b')
 my_input=str(raw_input("Enter Your Sentence:"))
 from pyavrophonetic import avro
 import codecs
@@ -25,7 +23,7 @@ if len(check)==4:
     print("Translation Completed.Saved to translate.txt")
     num+1
     
-    if s1 and s2 and s3 and s4 in codecs.open('words.txt','r','utf-8').read():
+    if s1 and s2 and s3 and s4 in codecs.open('words.txt','r','utf-8').read().split():
       print "Banglish Style"
     else:
       print "Murad Takla Style"
