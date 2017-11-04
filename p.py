@@ -16,12 +16,10 @@ if len(check)==4:
     s2=avro.parse(check[1])
     s3=avro.parse(check[2])
     s4=avro.parse(check[3])
-    num=0
     p=codecs.open('translate.txt','r+','utf-8')
     p.write("%s.Translation : %s %s %s %s" %(num,s1,s2,s3,s4))
     p.close()
     print("Translation Completed.Saved to translate.txt")
-    num+1
     
     if s1 and s2 and s3 and s4 in codecs.open('words.txt','r','utf-8').read().split():
       print "Banglish Style"
